@@ -1,0 +1,8 @@
+<ng-template #nothing let-text>
+  <a [routerLink]="['./maybehere']">{{ text }}</a>
+</ng-template>
+
+<ng-container
+  [ngTemplateOutlet]="nothing"
+  [ngTemplateOutletContext]="{ $implicit: 'What would you see here?' }"
+></ng-container>
